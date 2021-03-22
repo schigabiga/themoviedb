@@ -2,12 +2,15 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:padding="10dp"
     android:layout_height="200dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:weightSum="5"
+        android:padding="10dp"
+        android:background="@color/item_background"
         android:orientation="horizontal">
         <ImageView
             android:layout_weight="2"
@@ -28,6 +31,7 @@
                 android:text="Ures"
                 android:gravity="center_vertical"
                 android:id="@+id/movie_item_title"
+                android:textStyle="bold"
                 android:layout_weight="1"/>
             <LinearLayout
                 android:layout_width="match_parent"
