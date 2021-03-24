@@ -17,6 +17,10 @@ public class MovieResponse {
         return results;
     }
 
+    public int getTotal_pages(){
+        return total_pages;
+    }
+
     @Override
     public String toString() {
         return "MovieResponse{" +

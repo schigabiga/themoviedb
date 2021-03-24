@@ -24,12 +24,30 @@
         android:layout_centerInParent="true"
         />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycleview"
-        android:nestedScrollingEnabled="false"
-        android:visibility="gone"
-        tools:listitem="@layout/movie_items"/>
+        android:id="@+id/main_nested"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycleview"
+            android:nestedScrollingEnabled="false"
+            android:layout_weight="1"
+            tools:listitem="@layout/movie_items"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progb_pagi"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>
