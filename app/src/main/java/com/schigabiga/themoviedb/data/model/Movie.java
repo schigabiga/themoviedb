@@ -26,16 +26,32 @@ public class Movie {
         return desc;
     }
 
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
     public String getTitle() {
         return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public double getFav() {
         return fav;
     }
 
+    public void setFav(double fav) {
+        this.fav = fav;
+    }
+
     public double getLike() {
         return like;
+    }
+
+    public void setLike(double like) {
+        this.like = like;
     }
 
     @Override

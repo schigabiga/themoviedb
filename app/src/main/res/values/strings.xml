@@ -1,4 +1,3 @@
 <resources>
     <string name="app_name">TheMovieDb</string>
-    <string name="not_found">Nem található film a keresés alapján.</string>
 </resources>

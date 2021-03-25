@@ -18,4 +18,8 @@ public class Resource<T>{
     public T getData() {
         return data;
     }
+
+    public Object getO() {
+        return o;
+    }
 }
