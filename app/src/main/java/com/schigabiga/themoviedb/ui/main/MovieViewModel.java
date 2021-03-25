@@ -1,4 +1,4 @@
-package com.schigabiga.themoviedb.ui.main.viewmodel;
+package com.schigabiga.themoviedb.ui.main;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

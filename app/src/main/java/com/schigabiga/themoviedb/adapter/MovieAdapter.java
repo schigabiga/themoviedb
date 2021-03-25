@@ -1,6 +1,5 @@
 package com.schigabiga.themoviedb.adapter;
 
-import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,10 +19,8 @@ import java.util.ArrayList;
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
     private ArrayList<Movie> movies;
-    private Activity activity;
 
-    public MovieAdapter(Activity activity, ArrayList<Movie> movies){
-        this.activity = activity;
+    public MovieAdapter(ArrayList<Movie> movies){
         this.movies = movies;
     }
 
